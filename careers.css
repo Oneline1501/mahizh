@@ -1,0 +1,111 @@
+.career-intro {
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 35px;
+}
+
+.career-intro h2 {
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin: 8px 0;
+}
+
+.career-intro p {
+    color: #666;
+}
+
+.eligibility {
+    min-width: 280px;
+
+    background: #fff6cf;
+
+    border: 1px solid #ecd36c;
+
+    padding: 22px;
+
+    border-radius: 13px;
+
+    display: grid;
+
+    gap: 5px;
+}
+
+.eligibility strong {
+    color: #b4000b;
+
+    font-size: 18px;
+}
+
+.jobs {
+    display: grid;
+
+    grid-template-columns:
+        1fr
+        1fr;
+
+    gap: 22px;
+}
+
+.job-card {
+    padding: 30px;
+
+    background: white;
+
+    border-radius: 13px;
+
+    border: 1px solid #eee;
+
+    box-shadow:
+        0 8px 25px rgba(0,0,0,0.06);
+}
+
+.job-card > span {
+    color: #b4000b;
+
+    font-size: 20px;
+
+    font-weight: bold;
+}
+
+.job-card h3 {
+    font-size: 24px;
+
+    margin: 5px 0;
+}
+
+.job-card p {
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+.job-card a {
+    color: #b4000b;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+@media(max-width:700px) {
+
+    .career-intro {
+        display: grid;
+
+        grid-template-columns: 1fr;
+    }
+
+    .jobs {
+        grid-template-columns: 1fr;
+    }
+
+}

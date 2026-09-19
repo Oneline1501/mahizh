@@ -1,0 +1,150 @@
+.contact-grid {
+    display: grid;
+
+    grid-template-columns:
+        .85fr
+        1.15fr;
+
+    gap: 50px;
+
+    align-items: start;
+}
+
+.contact-info h2 {
+    font-size: 38px;
+
+    line-height: 1.2;
+
+    margin: 8px 0 15px;
+}
+
+.contact-info > p {
+    color: #666;
+
+    margin-bottom: 25px;
+}
+
+.contact-item {
+    padding: 18px 0;
+
+    border-bottom: 1px solid #eee;
+
+    display: grid;
+
+    gap: 3px;
+}
+
+.contact-item strong {
+    color: #b4000b;
+}
+
+.contact-form {
+    background: #fffaf0;
+
+    border: 1px solid #eed88a;
+
+    border-radius: 15px;
+
+    padding: 30px;
+}
+
+.contact-form h2 {
+    margin-bottom: 20px;
+}
+
+.contact-form label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin-top: 6px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    font: inherit;
+
+    background: white;
+}
+
+.contact-form input:focus,
+.contact-form select:focus,
+.contact-form textarea:focus {
+
+    outline: 2px solid #f0d56b;
+
+    border-color: #b4000b;
+}
+
+#formMessage {
+    color: green;
+
+    font-weight: bold;
+
+    margin-top: 12px;
+}
+
+
+@media(max-width:750px) {
+
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+.branches-section {
+    padding: 60px 8%;
+    text-align: center;
+}
+
+.section-subtitle {
+    letter-spacing: 4px;
+    font-size: 16px;
+}
+
+.branches-section h2 {
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.branches-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
+}
+
+.branch-card {
+    padding: 30px 20px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.branch-card h3 {
+    color: #9d2027;
+}
+
+@media (max-width: 900px) {
+    .branches-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .branches-container {
+        grid-template-columns: 1fr;
+    }
+}
